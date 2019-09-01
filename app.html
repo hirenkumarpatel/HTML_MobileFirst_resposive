@@ -7,39 +7,106 @@
     <title>TaskMapper</title>
     <link rel="stylesheet" href="css/taskmapper.css" />
     <link
-      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
-      type="text/css"
     />
   </head>
   <body>
     <main>
-      <header id="header">
-        <h2 id="app-title">Task Mapper</h2>
-        <button id="new-task-link">
-          <!-- <i class="ion-ios-plus-outline"></i>New Task -->
-          <!-- <ion-icon name="add-circle-outline" .class="icon"></ion-icon>New Task -->
-          <i class="icon ion-ios-plus-outline"></i>New Task
+      <section id="header">
+        <h2 id="app-title" class="title-color">Task Mapper</h2>
+        <button class="button-link title-color">
+          <i class="icon ion-md-add-circle-outline title-color"></i>New Task
         </button>
-      </header>
+      </section>
       <div class="container">
         <section id="new-task-section">
-          <label>Enter task description</label>
+          <label class="default input-label">Enter task description</label>
           <div class="new-task-box">
-            <input type="text" name="new-task" />
-            <input type="submit" id="new-task-button" value="Add Task" />
+            <input type="text" name="new-task" class="default" />
+            <input
+              type="submit"
+              id="new-task-button"
+              class="title-color"
+              value="Add Task"
+            />
           </div>
         </section>
         <section>
           <ul id="task-labels">
-            <li id="task-list"><a href=""><i class="ion-checkmark-circled"></i> Create Project Design</a></li>
-            <li id="task-list"><a href=""><i class="ion-checkmark-circled"></i>Attend Interview</a></li>
-            <li id="task-list"><a href=""><i class="ion-checkmark-circled"></i>Metting at Company</a></li>
+            <li id="task-list" class="default">
+              <a href=""
+                ><i class="ion-md-checkmark-circle-outline title-color"></i>
+                Create Project Design</a
+              >
+              <div class="action-links">
+                <button class="button-link btn-edit">
+                  <i class="ion-md-create primary"></i>
+                </button>
+                <button class="button-link btn-save">
+                  <i class="ion-md-done-all success"></i>
+                </button>
+                <button class="button-link">
+                  <i class="ion-md-remove-circle-outline danger"></i>
+                </button>
+              </div>
+            </li>
+            <li id="task-list" class="default">
+              <a href=""
+                ><i class="ion-md-checkmark-circle-outline title-color"></i>
+                Create Project Proposal for Amphenol</a
+              >
+              <div class="action-links">
+                <button class="button-link btn-edit">
+                  <i class="ion-md-create primary"></i>
+                </button>
+                <button class="button-link btn-save">
+                  <i class="ion-md-done-all success"></i>
+                </button>
+                <button class="button-link">
+                  <i class="ion-md-remove-circle-outline danger"></i>
+                </button>
+              </div>
+            </li>
+            <li id="task-list" class="default">
+              <a href=""
+                ><i class="ion-md-checkmark-circle-outline title-color"></i>
+                Attend Interview at Scotia bank</a
+              >
+              <div class="action-links">
+                <button class="button-link btn-edit">
+                  <i class="ion-md-create primary"></i>
+                </button>
+                <button class="button-link btn-save">
+                  <i class="ion-md-done-all success"></i>
+                </button>
+                <button class="button-link">
+                  <i class="ion-md-remove-circle-outline danger"></i>
+                </button>
+              </div>
+            </li>
+            <li id="task-list" class="default">
+              <a href=""
+                ><i class="ion-md-checkmark-circle-outline title-color"></i>
+                Meeting at Webinar</a
+              >
+              <div class="action-links">
+                <button class="button-link btn-edit">
+                  <i class="ion-md-create primary"></i>
+                </button>
+                <button class="button-link btn-save">
+                  <i class="ion-md-done-all success"></i>
+                </button>
+                <button class="button-link">
+                  <i class="ion-md-remove-circle-outline danger"></i>
+                </button>
+              </div>
+            </li>
+            
           </ul>
         </section>
         <footer>Hiren Patel copyright &copy: 2019</footer>
       </div>
     </main>
   </body>
-  <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
 </html>
