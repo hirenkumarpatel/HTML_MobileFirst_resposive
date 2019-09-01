@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: #f4f4f4;
+}
+main {
+  max-width: 48rem; /*tablet size*/
+  margin: 1.2rem auto;
+  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+#header {
+  background: #d4d4d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.container {
+  padding: 1.2rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li > a {
+  text-decoration: none;
+}
+#app-title {
+  display: inline-block;
+  color: #eb4d4d /*#510b4e*/;
+  margin-left: 1.2rem;
+}
+
+/** New task button*/
+#new-task-link {
+  background: none;
+  border: none;
+  margin-right: 1.2rem;
+}
+#new-task-link:hover {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+/*font icons */
+i {
+  color: #eb4d4d;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.5rem;
+  line-height: 1;
+  vertical-align:text-top;
+  margin-top:-2px;
+  
+}
+section {
+  padding: 0.7rem;
+}
+#new-task-section > label {
+  font-size: 0.7rem;
+  color: #525252;
+}
+.new-task-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-task-box > input[type="text"] {
+  padding: 0.3rem;
+  font-size: 1rem;
+  flex: 3;
+  color: #525252;
+}
+.new-task-box > input[type="submit"] {
+  padding: 0.3rem;
+  font-size: 1rem;
+  flex: 1;
+}
+input,
+button {
+  font-family: "Roboto Condensed", sans-serif;
+}
+button,
+input[type="submit"] {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #eb4d4d;
+  font-size: 1rem;
+}
+
+#task-list {
+  border-bottom: 0.05rem solid #e1dcdcf0;
+  padding: 10px 0;
+}
+#task-list > a {
+  color: #525252;
+}
+footer {
+  text-align: center;
+}
+/* .menu-dots {
+  display: flex;
+}
+.menu-dot {
+  height: 5px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+} */
